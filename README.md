@@ -3,6 +3,8 @@ IR Hex codes I have uncovered for a Yamaha RX-V363 reciever while working on an 
 
 Relevant ESPHome code below creates a Home Assistant service that can be called to send verious hex codes directly from the Home Assistant frontend, without specifying switches in the ESPHome yaml.
 
+Majority of codes are also confirmed to work with the RX-V863 receiver. Please refer to the PDF with more codes, eg. for the Yamaha RX-V863 the "off" command only turns off main, by combining the "off" command with 0x7EBB zone 2 will also turn off.
+
 ```*.yaml
 api:
   password: !secret api_pw
